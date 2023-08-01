@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Supereroe Non Trovato</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+		body {
+			background-image: url(/images/sfondo-marvel.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100vh;
+		}
+
+		.logo-marvel {
+			background-color: #ED1C24;
+			display: inline-block;
+			padding: 5px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.login-title {
+			color: white;
+			font-family: 'Bangers', sans-serif;
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+			padding: 10px 10px;
+		}
+		
+		.red-button {
+			background: #ED1C24;
+			filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#25A6E1',
+					endColorstr='#188BC0', GradientType=0);
+			padding: 3px 5px;
+			margin: 1rem;
+			color: #fff;
+			font-family: 'Comic Neue', cursive;
+			font-size: 12px;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 4px;
+			border: 1px solid black
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="logo-marvel">
+			<span class="login-title">Ci dispiace! Il supereroe da te cercato è disperso o caduto in battaglia!</span>
+		</div>
+		<a href="/supereroi" class="red-button">Torna al database</a> <br />
+	</div>
+</body>
+
+</html>

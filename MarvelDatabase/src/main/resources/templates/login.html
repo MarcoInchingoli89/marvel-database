@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Utente</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(/images/sfondo-login.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.container {
+			max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+		}
+
+		.logo-marvel {
+			background-color: #ED1C24;
+			display: inline-block;
+			padding: 5px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			margin-top: 2rem;
+		}
+
+		.login-title {
+			color: white;
+			font-family: 'Bangers', sans-serif;
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+			padding: 10px 10px;
+		}
+
+		.login-black {
+			color: black;
+			font-family: 'Comic Neue', cursive;
+		}
+
+		.login-form-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+		.login-form {
+			max-width: 400px;
+			margin: 20px auto;
+			padding: 20px;
+			border-radius: 10px;
+			background-color: transparent;
+		}
+
+		.login-form input[type="text"],
+		.login-form input[type="password"] {
+			width: 60%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-family: 'Comic Neue', cursive;
+		}
+
+		.login-form button {
+			background-color: #ed1c24;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-family: 'Comic Neue', cursive;
+			width: 60%;
+		}
+
+		.image-container {
+			flex: 1;
+			height: 100vh;
+			background-image: url(/images/spidey-login.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.register-link {
+			margin-top: 10px;
+			font-weight: bold;
+			font-family: 'Comic Neue', cursive;
+			font-size: 18px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #ed1c24;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div align="center">
+		<div class="container">
+			<div class="image-container"></div>
+			<div class="login-form-container">
+				<div class="logo-marvel">
+					<span class="login-title">Marvel <span class="login-black">Database</span></span>
+				</div>
+				<div class="login-form">
+					<form action="/login" method="post">
+						<input type="text" name="email" placeholder="Email" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<button type="submit">Login</button>
+					</form>
+					<p class="register-link">Non sei ancora registrato? <a href="/registrazione">Clicca qui!</a></p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
